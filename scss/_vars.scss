@@ -1,6 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap');
 
 // COLORS
+
 $color-black: #000000;
 $color-grey: #828282;
 $color-grey-light: #F6F6F6;
@@ -24,3 +26,21 @@ $font-weight-rl: 400;
 // FONT STYLES
 $font-style-normal: normal;
 $font-style-italic: italic;
+
+
+
+  $color-white: #0b0a0a;
+  $color-grey:#4f4f4f;
+  $font-family-main: 'Montserrat', sans-serif;
+
+
+  
+  // media queries
+  $desktop: 1200px;
+  $laptop: 991px;
+  $tablet: 768px;
+  $mobile: 480px;
+  $mobile-landscape: 850px;
+  $mobile-sm: 360px;
+  $mobile-sm-landscape: 650px;
+
