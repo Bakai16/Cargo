@@ -1,5 +1,725 @@
 @import "../scss/vars";
 
-h2{
-   color: $color-black;
+a {
+  text-decoration: none;
+}
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0 22px 0;
+    //  align-items: center;
+  }
+  .nav {
+    display: flex;
+  }
+  &__menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+
+    //     &__item+&__item {
+    //       padding-left: 50px;
+    //   }
+
+    &__link {
+      text-decoration: none;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-main-link;
+      transition: 0.8s;
+    }
+
+    &__link:hover {
+      color: $color-red;
+    }
+
+    &__link-active {
+      color: #fff;
+      border: 1px solid red;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 35px;
+      display: flex;
+      text-decoration: none;
+      padding: 5px 20px;
+
+      background: $color-grd-btn;
+      border-radius: 4px;
+    }
+    &__item {
+      padding: 0 20px;
+    }
+    .call + .call {
+      padding-right: 0px;
+    }
+    .divs 
+    {
+      padding-left: 150px;
+      display: flex;
+
+    }
+    
+  }
+}
+
+form {
+  position: relative;
+  // width: 284px;
+  // height: 48px;
+  margin: 0 auto;
+}
+input,
+button {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+input {
+  width: 284px;
+  height: 48px;
+  background: #f6f6f6;
+  border-radius: 4px;
+  padding-left: 15px;
+}
+button {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  cursor: pointer;
+}
+.btnh:before {
+  content: url("../jarkynai/img/search.svg");
+}
+
+.wrapper {
+  display: flex;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      list-style-type: none;
+      padding: 0 5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #111111;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      transition: 0.8s;
+    }
+    a:hover {
+      color: $color-red;
+    }
+  }
+}
+.wrapper__map {
+  padding-right: 114px;
+  color: $color-red;
+  transition: 0.8s;
+  font-size: 16px;
+}
+.wrapper__map:hover {
+  color: $color-red;
+}
+.wrapper__user {
+  padding-left: 140px;
+  transition: 0.8s;
+  font-size: 16px;
+}
+.wrapper__user:hover {
+  color: $color-red;
+}
+
+.location {
+  div {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    width: 1114px;
+    height: 194px;
+    background-color: grey;
+  }
+}
+
+.banner {
+  background-image: url("../jarkynai/img/image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+
+  &__title {
+    padding-top: 48px;
+    padding-bottom: 24px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+  &__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    padding-bottom: 36px;
+  }
+  &__link {
+    color: $color-white;
+    border: 1px solid $color-grd-btn;
+    padding: 12px 24px;
+    border-radius: 4px;
+    background: $color-grd-btn;
+  }
+  .num {
+    margin-top: 280px;
+    padding-left: 100px;
+    color: $color-white;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .num::after {
+    padding-left: 20px;
+    content: url("../jarkynai/img/previous/arrow-right.svg");
+  }
+  .num::before {
+    padding-right: 20px;
+    content: url("../jarkynai/img/previous/arrow-left.svg");
+  }
+}
+.numer {
+  position: relative;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__title {
+    padding-top: 48px;
+    padding-bottom: 34px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &__num {
+      position: relative;
+      //padding-top: 10px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 78px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: $color-red;
+      .mani {
+        position: absolute;
+        top: -10px;
+        left: 15%;
+        font-size: 20px;
+      }
+      .txt {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #111111;
+      }
+    }
+  }
+  .blog2__img {
+    position: absolute;
+    left: 580px;
+  }
+}
+.transporation {
+  &__title {
+    margin-top: 58px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+  &__inner {
+    margin-top: 34px;
+    margin-bottom: 36px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .flex {
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
+    padding: 32px 36px;
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.oil {
+  background-image: url("../jarkynai/img/Rectangle\ 109.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    padding-top: 48px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $color-white;
+    padding-bottom: 24px;
+  }
+  &__text {
+    padding-bottom: 49px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-white;
+  }
+  &__link {
+    padding: 13px 24px;
+    border: 1px solid $color-grd-btn;
+    border-radius: 4px;
+    background: $color-grd-btn;
+    color: $color-white;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .num {
+    padding-top: 277px;
+    padding-bottom: 37px;
+    color: $color-white;
+    padding-left: 0px;
+  }
+  .num::after {
+    padding-left: 20px;
+    content: url("../jarkynai/img/previous/arrow-right.svg");
+  }
+  .num::before {
+    padding-right: 20px;
+    content: url("../jarkynai/img/previous/arrow-left.svg");
+  }
+}
+
+.news {
+  margin-top: 36px;
+  margin-bottom: 72px;
+  &__inner {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 20px;
+    .blc__new {
+      padding: 29px 38px 18px;
+      background: #f6f6f6;
+      box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
+      border-radius: 4px;
+
+      &__link {
+        color: $color-red;
+      }
+
+      &__main-txt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__title {
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 39px;
+        }
+      }
+
+      &__second-txt {
+        background: $color-white;
+        margin-top: 14px;
+        padding: 14px;
+        border-radius: 4px;
+
+        &__num {
+          font-size: 16px;
+          color: $color-black;
+          padding-bottom: 16px;
+        }
+        &__link {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: $color-red;
+        }
+      }
+      // .text {
+      //   font-family: "Montserrat";
+      //   font-style: normal;
+      //   font-weight: 400;
+      //   font-size: 18px;
+      //   line-height: 22px;
+      //   padding-bottom: 14px;
+      // }
+    }
+  }
+}
+.text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 14px;
+}
+.blc__director {
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  padding: 29px;
+  box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
+  border-radius: 4px;
+  .text {
+    padding-top: 14px;
+  }
+  &__link {
+    padding-top: 19px;
+    color: $color-red;
+  }
+  &__img {
+    padding-top: 19px;
+  }
+}
+
+.title {
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.why-we {
+  background: #f6f6f6;
+  padding-bottom: 36px;
+  &__title {
+    padding-top: 36px;
+  }
+  &__wrapper {
+    padding-top: 36px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+    .why-flex {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  &__num {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background: $color-grd-btn;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    // text-fill-color: transparent;
+  }
+  &__link {
+    border: 1px solid $color-grd-btn;
+    border-radius: 4px;
+    padding: 13px 24px;
+    color: $color-white;
+    background: $color-grd-btn;
+    // font-family: "Montserrat";
+    // font-style: normal;
+    // font-weight: 400;
+    // font-size: 16px;
+    // line-height: 20px;
+    // color: $color-red;
+  }
+}
+.need-help {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  .container {
+    padding: 36px;
+    background: #ffffff;
+    border: 1px solid rgba(189, 189, 189, 0.5);
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: -5px 4px 24px rgba(189, 189, 189, 0.5);
+  }
+  &__title {
+    font-size: 32px;
+    padding-bottom: 24px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__tel {
+    color: #fff;
+    border: 1px solid red;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 37px;
+    display: flex;
+    text-decoration: none;
+    padding: 5px 23px;
+
+    background: $color-grd-btn;
+    border-radius: 4px;
+    a {
+      color: $color-white;
+    }
+  }
+  &__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.rec {
+  &__inner {
+    padding-top: 24px;
+    // display: flex;
+    .rec__list {
+      position: relative;
+      display: flex;
+      gap: 16px;
+      padding-bottom: 48px;
+      li {
+        list-style: none;
+        border: 1px solid #fff;
+        box-shadow: 0 0 5px;
+        border-radius: 4px;
+      }
+    }
+  }
+  ul::after {
+    position: absolute;
+    left: 1216px;
+    top: 40%;
+    content: url("../jarkynai/img/Frame\ 33.svg");
+  }
+  ul::before {
+    position: absolute;
+    left: -50px;
+    top: 40%;
+    content: url("../jarkynai/img/Frame\ 28.svg");
+  }
+}
+
+.following {
+  background-color: #f6f6f6;
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 26px 0;
+  }
+
+  &__title {
+    padding: 31px 45px;
+  }
+  .follow {
+    border: 1px solid #dedede;
+    width: 390px;
+    height: 48px;
+  }
+  .follow__btn {
+    background: $color-grd-btn;
+    border: 1px solid $color-grd-btn;
+    border-radius: 4px;
+    color: $color-white;
+    padding: 13px 24px;
+  }
+}
+
+.map {
+  position: relative;
+  background-image: url("../jarkynai/img/map.png");
+  padding: 58px 0;
+
+  &__adresse {
+    background-color: $color-white;
+    max-width: 603px;
+    border-radius: 4px;
+    padding: 36px;
+
+    box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
+  }
+  &__text {
+    padding: 24px 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  a {
+    border: 1px solid $color-grd-btn;
+    background: $color-grd-btn;
+    color: $color-white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 24px;
+  }
+  &__icon {
+    position: absolute;
+    left: 800px;
+    top: 200px;
+  }
+}
+
+.footer {
+  &__logo {
+    margin: 36px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icon {
+    img {
+      padding-left: 49px;
+    }
+  }
+
+  &__call-text {
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      // justify-content: space-between;
+      gap: 55px;
+    }
+
+    .linki {
+      padding-top: 5px;
+    }
+  }
+  .footer-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 20px;
+  }
+  .branches {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+      padding-top: 19px;
+      padding-bottom: 24px;
+    }
+    .branches-link {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-grey;
+    }
+    .branches-link:hover {
+      color: $color-red;
+    }
+  }
+  .pink {
+    color: #d51218;
+  }
+  .test {
+    margin-bottom: 24px;
+  }
+  .padd {
+    padding-bottom: 20px;
+  }
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+  }
+}
+
+//global main
+li {
+  list-style: none;
+}
+span {
+  display: inline-block;
+  width: 1240px;
+  border: 1px solid red;
 }
