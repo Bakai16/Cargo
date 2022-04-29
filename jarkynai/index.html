@@ -10,96 +10,142 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a href="#" class="header__link">
-                    <img class="header__logo__img" src="../jarkynai/img/logo-red.svg" alt="logo">
-                </a>
-                <nav class="header__nav">
-                    <ul class="header__menu">
-                        <li class="header__menu__item">
-                            <a href="" class="header__menu__link">Бизнесу</a>
-                        </li>
-                        <li class="header__menu__item">
-                            <a href="" class="header__menu__link">Частным лицам</a>
-                        </li>
-                        <div class="divs">
-                            <li class="header__menu__item call">
-                                <form class="header-form">
-                                    <input type="text" placeholder="Искать здесь..." class="header-input">
-    
-                                    <button type="submit" class="btnh"></button>
-                                </form>
-    
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__inner__logo">
+                        <a class="header__inner__logo__link" href="#">
+                            <img class="header__inner__logo__link__img" src="../assets/img/logo-red.png" alt="">
+                        </a>
+                    </div>
+
+                    <nav class="header__inner__nav">
+                        <ul class="header__inner__nav__list">
+                            <li class="header__inner__nav__list__item">
+                                <a class="header__inner__nav__list__item__link active-navbar" href="#">Бизнесу</a>
                             </li>
-                            <li class="header__menu__item call">
-                            <a href="" class="header__menu__link-active">8 (800) 250-06-60</a>
+
+                            <li class="header__inner__nav__list__item">
+                                <a class="header__inner__nav__list__item__link" href="#">Частным лицам</a>
                             </li>
-                        </div>
-                    
-                    </ul>
-                </nav>
+
+                            <li class="header__inner__nav__list__item__search">
+                                <div class="header__inner__nav__list__item__search-block">
+                                    <form class="header__inner__nav__list__item__search-block__form">
+                                        <input class="header__inner__nav__list__item__search-block__form__input" type="text" placeholder="Поиск">
+                                        <button class="header__inner__nav__list__item__search-block__form__button-img" type="submit">
+                                            <svg class="header__inner__nav__list__item__search-block__form__button-img__img">
+                                                <use xlink:href="../assets/img/search.svg#search"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
+                            </li>
+
+                            <li class="header__inner__nav__list__item__contact">
+                                <div class="header__inner__nav__list__item__contact-block">
+                                    <a class="header__inner__nav__list__item__contact-block__link" href="tel:+88002500660">8 (800) 250-06-60</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="header__wrapper">
+        </div>
 
-                <ul class="wrapper__list">
-                    <div class="wrapper__map">
-                        <img src="../jarkynai/img/map-pin1.svg" alt="">
-                        г. Москва
+        <div class="geo__navbar__personal-area">
+            <div class="container">
+                <div class="geo__navbar__personal-area__inner">
+                    <div class="geo__navbar__personal-area__inner__geo">
+                        <a class="geo__navbar__personal-area__inner__geo__link" href="#">
+                            <div class="geo__navbar__personal-area__inner__geo__link__img-text">
+                                <svg class="geo__navbar__personal-area__inner__geo__link__img-text__svg">
+                                    <use xlink:href="../assets/img/map-pin.svg#geo"></use>
+                                </svg>
+                                <p class="geo__navbar__personal-area__inner__geo__link__img-text__text">г. Москва</p>
+                            </div>
+                        </a>
                     </div>
-                    <li class="list__item">
-                        <a href="#" class="list__link">
-                            О компании
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="list__link">
-                            Услуги
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="list__link">
-                            Направления
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="list__link">
-                            Тарифы
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="list__link">
-                            Партнёрам
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="list__link">
-                            Вопросы
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="list__link">
-                            Контакты
-                        </a>
-                    </li>
-                    <div class="wrapper__user">
-                        <img src="../jarkynai/img/user.svg" alt="user">
-                        Личный кабинет
-                    </div>
-                </ul>
 
+                    <nav class="geo__navbar__personal-area__inner__navbar">
+                        <ul class="geo__navbar__personal-area__inner__navbar__list">
+                            <li class="geo__navbar__personal-area__inner__navbar__list__item">
+                                <a class="geo__navbar__personal-area__inner__navbar__list__item__link active-navbar-second" href="#">О компании</a>
+                            </li>
+                            <li class="geo__navbar__personal-area__inner__navbar__list__item">
+                                <a class="geo__navbar__personal-area__inner__navbar__list__item__link" href="#">Услуги</a>
+                            </li>
+                            <li class="geo__navbar__personal-area__inner__navbar__list__item">
+                                <a class="geo__navbar__personal-area__inner__navbar__list__item__link" href="#">Направления</a>
+                            </li>
+                            <li class="geo__navbar__personal-area__inner__navbar__list__item">
+                                <a class="geo__navbar__personal-area__inner__navbar__list__item__link" href="#">Тарифы</a>
+                            </li>
+                            <li class="geo__navbar__personal-area__inner__navbar__list__item">
+                                <a class="geo__navbar__personal-area__inner__navbar__list__item__link" href="#">Партнёрам </a>
+                            </li>
+                            <li class="geo__navbar__personal-area__inner__navbar__list__item">
+                                <a class="geo__navbar__personal-area__inner__navbar__list__item__link" href="#">Вопросы </a>
+                            </li>
+                            <li class="geo__navbar__personal-area__inner__navbar__list__item">
+                                <a class="geo__navbar__personal-area__inner__navbar__list__item__link" href="#">Контакты </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="geo__navbar__personal-area__personal-area-block">
+                        <a class="geo__navbar__personal-area__personal-area-block__link" href="#">
+                            <div class="geo__navbar__personal-area__personal-area-block__link__inner-blocks">
+                                <svg class="geo__navbar__personal-area__personal-area-block__link__inner-blocks__logo">
+                                    <use xlink:href="../assets/img/user.svg#user"></use>
+                                </svg>
+                                <p class="geo__navbar__personal-area__personal-area-block__link__inner-blocks__text">Личный кабинет</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="links-about">
+            <div class="container">
+                <div class="links-about__inner">
+                    <nav class="links-about__inner__nav">
+                        <ul class="links-about__inner__nav__list">
+                            <li class="links-about__inner__nav__list__item">
+                                <a class="links-about__inner__nav__list__item__link active-links" href="#">О нас</a>
+                            </li>
+                            <li class="links-about__inner__nav__list__item">
+                                <a class="links-about__inner__nav__list__item__link" href="#">Наша команда</a>
+                            </li>
+                            <li class="links-about__inner__nav__list__item">
+                                <a class="links-about__inner__nav__list__item__link" href="#">Карьера в ДА-ТРАНС</a>
+                            </li>
+                            <li class="links-about__inner__nav__list__item">
+                                <a class="links-about__inner__nav__list__item__link" href="#">Документы</a>
+                            </li>
+                            <li class="links-about__inner__nav__list__item">
+                                <a class="links-about__inner__nav__list__item__link" href="#">Отзывы </a>
+                            </li>
+                            <li class="links-about__inner__nav__list__item">
+                                <a class="links-about__inner__nav__list__item__link" href="#">Благотворительность </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="location">
+        <!-- <section class="location">
             <div class="container">
                 <div>
 
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="banner">
             <div class="container">
                 <h5 class="banner__title">

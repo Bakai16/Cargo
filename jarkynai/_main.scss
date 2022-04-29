@@ -4,99 +4,99 @@ a {
   text-decoration: none;
 }
 
-.header {
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    padding: 32px 0 22px 0;
-    //  align-items: center;
-  }
-  .nav {
-    display: flex;
-  }
-  &__menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    padding-left: 0;
+// .header {
+//   &__inner {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 32px 0 22px 0;
+//     //  align-items: center;
+//   }
+//   .nav {
+//     display: flex;
+//   }
+//   &__menu {
+//     list-style: none;
+//     display: flex;
+//     align-items: center;
+//     padding-left: 0;
 
-    //     &__item+&__item {
-    //       padding-left: 50px;
-    //   }
+//     //     &__item+&__item {
+//     //       padding-left: 50px;
+//     //   }
 
-    &__link {
-      text-decoration: none;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 20px;
-      color: $color-main-link;
-      transition: 0.8s;
-    }
+//     &__link {
+//       text-decoration: none;
+//       font-family: "Montserrat";
+//       font-style: normal;
+//       font-weight: 600;
+//       font-size: 16px;
+//       line-height: 20px;
+//       color: $color-grey-light;
+//       transition: 0.8s;
+//     }
 
-    &__link:hover {
-      color: $color-red;
-    }
+//     &__link:hover {
+//       color: $color-red;
+//     }
 
-    &__link-active {
-      color: #fff;
-      border: 1px solid red;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 35px;
-      display: flex;
-      text-decoration: none;
-      padding: 5px 20px;
+//     &__link-active {
+//       color: #fff;
+//       border: 1px solid red;
+//       font-family: "Montserrat";
+//       font-style: normal;
+//       font-weight: 600;
+//       font-size: 20px;
+//       line-height: 35px;
+//       display: flex;
+//       text-decoration: none;
+//       padding: 5px 20px;
 
-      background: $color-grd-btn;
-      border-radius: 4px;
-    }
-    &__item {
-      padding: 0 20px;
-    }
-    .call + .call {
-      padding-right: 0px;
-    }
-    .divs 
-    {
-      padding-left: 150px;
-      display: flex;
+//       background: $color-grd-btn;
+//       border-radius: 4px;
+//     }
+//     &__item {
+//       padding: 0 20px;
+//     }
+//     .call + .call {
+//       padding-right: 0px;
+//     }
+//     .divs 
+//     {
+//       padding-left: 150px;
+//       display: flex;
 
-    }
+//     }
     
-  }
-}
+//   }
+// }
 
-form {
-  position: relative;
-  // width: 284px;
-  // height: 48px;
-  margin: 0 auto;
-}
-input,
-button {
-  border: none;
-  outline: none;
-  border-radius: 4px;
-}
-input {
-  width: 284px;
-  height: 48px;
-  background: #f6f6f6;
-  border-radius: 4px;
-  padding-left: 15px;
-}
-button {
-  height: 26px;
-  width: 26px;
-  position: absolute;
-  top: 10px;
-  right: 8px;
-  cursor: pointer;
-}
+// form {
+//   position: relative;
+//   // width: 284px;
+//   // height: 48px;
+//   margin: 0 auto;
+// }
+// input,
+// button {
+//   border: none;
+//   outline: none;
+//   border-radius: 4px;
+// }
+// input {
+//   width: 284px;
+//   height: 48px;
+//   background: #f6f6f6;
+//   border-radius: 4px;
+//   padding-left: 15px;
+// }
+// button {
+//   height: 26px;
+//   width: 26px;
+//   position: absolute;
+//   top: 10px;
+//   right: 8px;
+//   cursor: pointer;
+// }
 .btnh:before {
   content: url("../jarkynai/img/search.svg");
 }
