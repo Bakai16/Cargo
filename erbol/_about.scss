@@ -1,5 +1,6 @@
 @import "../scss/vars";
 
+// MENU
 .header {
     margin-top: 19px;
 
@@ -275,3 +276,115 @@
         }
     }
 }
+// END MENU
+
+// ABOUT COMPANY
+.about-company {
+    margin-top: 36px;
+
+    &__inner {
+        padding: 0 68px 0 89px;
+
+        &__blocks {
+
+            &__title-about {
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-sm;
+                font-style: $font-style-normal;
+                font-size: 32px;
+
+                text-transform: uppercase;
+
+                line-height: 39.01px;
+                letter-spacing: 0.02em;
+
+                color: $color-black;
+                margin-bottom: 24px;
+            }
+
+            &__text-presentation {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__text {
+                    max-width: 702px;
+
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-rl;
+                    font-style: $font-style-normal;
+                    font-size: 20px;
+
+                    color: $color-black;
+                    
+                    line-height: 24px;
+                }
+
+                &__presentation {
+                    display: flex;
+                    align-items: center;
+
+                    border: 1px solid $color-red;
+                    border-radius: 4px;
+
+                    padding: 0 0 0 23px;
+
+                    &__title-download {
+
+                        &__text {
+                            font-family: $font-family-montserrat;
+                            font-weight: $font-weight-sm;
+                            font-style: $font-style-normal;
+                            font-size: 20px;
+
+                            color: $color-red;
+
+                            line-height: 24.38px;
+                            text-transform: uppercase;
+
+                            max-width: 198px;
+                            margin-bottom: 24px;
+                        }
+
+                        &__link {
+                            text-decoration: none;
+
+                            &__icon-text {
+                                display: flex;
+                                align-items: center;
+
+                                &__icon {
+                                    width: 22.5px;
+                                    height: 26.5px;
+                                }
+
+                                &__text {
+                                    margin-left: 14px;
+
+                                    font-family: $font-family-montserrat;
+                                    font-weight: $font-weight-rl;
+                                    font-style: $font-style-normal;
+                                    font-size: 16px;
+
+                                    color: $color-red;
+
+                                    line-height: 19.5px;
+                                }
+                            }
+                        }
+                    }
+
+                    &__red-car {
+                        margin-left: 50px;
+
+                        &__img {
+                            width: 122px;
+                            height: 121px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// AND ABOUT COMPANY
