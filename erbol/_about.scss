@@ -125,7 +125,7 @@
 .geo__navbar__personal-area {
     margin-top: 20px;
     border-top: 1px solid #F2F2F2;
-    
+
     padding-top: 20px;
 
     &__inner {
@@ -276,6 +276,7 @@
         }
     }
 }
+
 // END MENU
 
 // ABOUT COMPANY
@@ -316,7 +317,7 @@
                     font-size: 20px;
 
                     color: $color-black;
-                    
+
                     line-height: 24px;
                 }
 
@@ -385,6 +386,51 @@
                 }
             }
         }
+
+        &__slogan {
+            padding: 0 53px 0 30px;
+            margin-top: 48px;
+
+            &__block {
+                display: flex;
+                align-items: center;
+
+                &__chr1 {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-sm;
+                    font-style: $font-style-normal;
+                    font-size: 66px;
+
+                    color: $color-red;
+                }
+
+                &__prg {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-md;
+                    font-style: $font-style-italic;
+                    font-size: 24px;
+
+                    color: $color-black;
+
+                    text-transform: uppercase;
+                    text-align: justify;
+                    letter-spacing: 0.02em;
+
+                    margin: 0 24px;
+                }
+
+                &__chr2 {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-sm;
+                    font-style: $font-style-normal;
+                    font-size: 66px;
+
+                    color: $color-red;
+                    transform: rotate(180deg);
+                }
+            }
+        }
     }
 }
+
 // AND ABOUT COMPANY
