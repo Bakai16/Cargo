@@ -47,10 +47,8 @@ a {
       font-weight: 600;
       font-size: 20px;
       line-height: 35px;
-      display: flex;
       text-decoration: none;
       padding: 5px 20px;
-
       background: $color-grd-btn;
       border-radius: 4px;
     }
@@ -60,13 +58,10 @@ a {
     .call + .call {
       padding-right: 0px;
     }
-    .divs 
-    {
+    .divs {
       padding-left: 150px;
       display: flex;
-
     }
-    
   }
 }
 
@@ -471,6 +466,7 @@ button {
 
     .why-flex {
       display: flex;
+    
       align-items: center;
       gap: 8px;
     }
@@ -723,3 +719,37 @@ span {
   width: 1240px;
   border: 1px solid red;
 }
+
+@media screen and (max-width: 1000px) {
+  .numer {
+    img {
+      width: 60%;
+    }
+    .blog2__img {
+      position: absolute;
+      left: 470px;
+    }
+    .txt {
+      font-weight: 200;
+      font-size: 14px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+  }
+  .transporation {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+// .why-we {
+//   &__wrapper  {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+}
+
+
+  span {
+    width: 998px;
+  }
+
