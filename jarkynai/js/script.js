@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$('.slider').slick({
 		arrows:true,
 		dots:true,
-		slidesToShow:6,
+		slidesToShow:3,
 		autoplay:true,
 		speed:1800,
 		autoplaySpeed:900,
@@ -15,7 +15,7 @@ $(document).ready(function(){
 				}
 			},
 			{
-				breakpoint: 550,
+				breakpoint: 480,
 				settings: {
 					slidesToShow:1
 				}
@@ -23,3 +23,4 @@ $(document).ready(function(){
 		]
 	});
 });
+

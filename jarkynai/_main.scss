@@ -10,12 +10,14 @@ a {
   margin: 0 auto;
 }
 .hr {
- border: 1px solid $color-red;
- color: $color-red;
- background-color: $color-red;
- 
+  border: 1px solid $color-red;
+  color: $color-red;
+  background-color: $color-red;
 }
 .hr-med {
+  display: none;
+}
+.hr-med2 {
   display: none;
 }
 .foot-hr {
@@ -25,9 +27,8 @@ a {
 }
 
 .bg-img {
-  background-image: url('../jarkynai/img/background.svg');
+  background-image: url("../jarkynai/img/background.svg");
   background-repeat: no-repeat;
-
 }
 
 .main-header {
@@ -639,96 +640,85 @@ a {
       display: flex;
       gap: 16px;
       padding-bottom: 48px;
-    
     }
   }
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .slick-slider {
+    min-width: 0;
+  }
 
-.slick-slider {
-  min-width: 0;
-}
+  .slick-list {
+    overflow: hidden;
+  }
 
-.slick-list {
-  overflow: hidden;
-}
+  .slick-track {
+    display: flex;
+    align-items: flex-start;
+  }
 
-.slick-track {
-  display: flex;
-  align-items: flex-start;
-}
+  .slider {
+    position: relative;
+    padding: 0px 60px;
+  }
 
-.slider {
-  position: relative;
-  padding: 0px 60px;
-}
+  .slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: 0px 25px 6px 25px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 48px;
+  }
+  .slider .slick-arrow.slick-prev {
+    left: -30px;
+    background: url("../jarkynai/img/Frame\ 28.svg") 0 0 / 100% no-repeat;
+  }
+  .slider .slick-arrow.slick-next {
+    right: -30px;
+    background: url("../jarkynai/img/Frame\ 33.svg") 0 0 /100% no-repeat;
+  }
+  .slider .slick-arrow.slick-disabled {
+    opacity: 0.9;
+  }
 
+  .slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider .slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+  }
+  // .slider .slick-dots button {
+  //   font-size: 0;
+  //   width: 10px;
+  //   height: 10px;
+  //   background-color: #fff;
+  //   border-radius: 50%;
+  // }
 
-.slider .slick-arrow {
-  position: absolute;
-  top: 50%;
-  margin: 0px 25px 6px 25px;
-  z-index: 10;
-  font-size: 0;
-  width: 30px;
-  height: 48px;
-}
-.slider .slick-arrow.slick-prev {
-  left: -30px;
-  background: url("../jarkynai/img/Frame\ 28.svg") 0 0 / 
-  100% no-repeat;
-}
-.slider .slick-arrow.slick-next {
-  right: -30px;
-  background: url("../jarkynai/img/Frame\ 33.svg") 0 0 /100%
-    no-repeat;
-}
-.slider .slick-arrow.slick-disabled {
-  opacity: 0.9;
-}
+  .slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
 
-.slider .slick-dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .slider__item {
+    padding: 10px 15px;
+  }
+  .slider__item img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+  }
 }
-.slider .slick-dots li {
-  list-style: none;
-  margin: 0px 10px;
-}
-.slider .slick-dots button {
-  font-size: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-}
-
-.slider .slick-dots li.slick-active button {
-  background-color: transparent;
-  border: 1px solid #fff;
-}
-
-.slider__item {
-  padding: 10px 15px;
-}
-.slider__item img {
-  max-width: 100%;
-  border-radius: 5px;
-  box-shadow:  0 0 10px;
-}
-
-}
-
-
-
-
-
 
 .following {
   background-color: #f6f6f6;
@@ -870,11 +860,6 @@ a {
 li {
   list-style: none;
 }
-span {
-  display: inline-block;
-  width: 1240px;
-  border: 1px solid red;
-}
 
 @media screen and (max-width: 1000px) {
   .numer {
@@ -899,7 +884,7 @@ span {
     }
   }
   .why-we {
-    &__wrapper  {
+    &__wrapper {
       grid-template-columns: repeat(2, 1fr);
     }
     .hr {
@@ -909,9 +894,151 @@ span {
       display: block;
       border: 1px solid $color-red;
     }
+  }
 }
 
-span {
-  width: 998px;
-}
+@media screen and (max-width: 480px) {
+  .main-header__inner__nav__list {
+    display: none;
+    width: 350px;
+    height: 100%;
+    background: #fff;
+    color: #775ca6;
+    padding: 35px 0 0 35px;
+    position: fixed;
+    overflow-x: hidden;
+    right: -400px;
+    top: 83px;
+    transition: 0.5s;
+    z-index: 5;
+  }
+  .geo__nav__person-area {
+    display: none;
+  }
+
+  .numer {
+    img {
+      width: 100%;
+    }
+    .numer__inner {
+      grid-template-columns: 1fr;
+    }
+    .numer__blog2 {
+      img {
+        position: static;
+      }
+    }
+
+    .txt {
+      font-weight: 200;
+      font-size: 14px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+    .blogs {
+      gap: 20px;
+      &__num {
+        font-size: 48px;
+      
+        &__mani {
+          position: absolute;
+          top: -15px;
+          left: 15%;
+          font-size: 10px;
+        }
+        &__txt {
+          font-size: 12px;
+        }
+      }
+    }
+   
+  }
+  .transporation {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+    .flex {
+      gap: 80px;
+    }
+  }
+  .news {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+    .blc__new {
+      margin: 0;
+      padding: 20px;
+    }
+  }
+  .why-we {
+    &__wrapper {
+      grid-template-columns:1fr;
+    }
+    .hr-med{
+      display: none;
+      // border: 1px solid $color-red;
+    }
+    .hr-med2 {
+      border: 1px solid $color-red;
+      color: $color-red;
+      background-color: $color-red;
+    }
+    &__title {
+      font-size: 20px;
+    }
+  }
+  .need-help {
+    &__wrapper {
+      display: block;
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__text {
+      padding-bottom: 15px;
+    }
+  }
+  .rec{
+    &__title {
+      font-size: 20px;
+    }
+  }
+  .following {
+
+    &__title {
+      font-size: 20px;
+    }
+    &__inner {
+      display: block;
+      text-align: center;
+
+    }
+    .follow__btn {
+      margin-top: 10px;
+      margin-left: 0;
+      
+     
+    }
+  }
+  .map {
+
+    &__icon {
+      display: none;
+    }
+  }
+  .footer {
+    &__call-text {
+      display: none;
+    }
+    .branches {
+      display: none;
+    }
+    .test {
+      display: none;
+    }
+    .footer-footer {
+      padding-top: 20px;
+    }
+  }
 }
