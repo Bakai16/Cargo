@@ -30,6 +30,9 @@ a {
   background-image: url("../jarkynai/img/background.svg");
   background-repeat: no-repeat;
 }
+.toggle {
+  display: none;
+}
 
 .main-header {
   margin-top: 19px;
@@ -940,7 +943,7 @@ li {
       gap: 20px;
       &__num {
         font-size: 48px;
-      
+
         &__mani {
           position: absolute;
           top: -15px;
@@ -952,7 +955,6 @@ li {
         }
       }
     }
-   
   }
   .transporation {
     &__inner {
@@ -973,9 +975,9 @@ li {
   }
   .why-we {
     &__wrapper {
-      grid-template-columns:1fr;
+      grid-template-columns: 1fr;
     }
-    .hr-med{
+    .hr-med {
       display: none;
       // border: 1px solid $color-red;
     }
@@ -999,30 +1001,25 @@ li {
       padding-bottom: 15px;
     }
   }
-  .rec{
+  .rec {
     &__title {
       font-size: 20px;
     }
   }
   .following {
-
     &__title {
       font-size: 20px;
     }
     &__inner {
       display: block;
       text-align: center;
-
     }
     .follow__btn {
       margin-top: 10px;
       margin-left: 0;
-      
-     
     }
   }
   .map {
-
     &__icon {
       display: none;
     }
@@ -1040,5 +1037,18 @@ li {
     .footer-footer {
       padding-top: 20px;
     }
+  }
+  .toggle {
+    margin-left: 150px;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    background: #e7e7e7;
+    box-shadow: 8px 8px 15px #d2d2d2, -8px -8px 15px #fcfcfc;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+
   }
 }

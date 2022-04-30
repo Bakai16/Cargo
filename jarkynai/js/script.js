@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$('.slider').slick({
 		arrows:true,
 		dots:true,
-		slidesToShow:3,
+		slidesToShow:6,
 		autoplay:true,
 		speed:1800,
 		autoplaySpeed:900,
@@ -23,4 +23,12 @@ $(document).ready(function(){
 		]
 	});
 });
+
+let menuToggle = 
+document.querySelector(".toggle");
+menuToggle.addEventListener("click", function 
+() {
+	menuToggle.classList.toggle("active");
+});
+
 
