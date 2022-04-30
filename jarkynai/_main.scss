@@ -2,156 +2,240 @@
 
 a {
   text-decoration: none;
+  font-family: $font-family-montserrat;
+  font-style: normal;
 }
-
-.header {
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    padding: 32px 0 22px 0;
-    //  align-items: center;
-  }
-  .nav {
-    display: flex;
-  }
-  &__menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    padding-left: 0;
-
-    //     &__item+&__item {
-    //       padding-left: 50px;
-    //   }
-
-    &__link {
-      text-decoration: none;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 20px;
-      color: $color-main-link;
-      transition: 0.8s;
-    }
-
-    &__link:hover {
-      color: $color-red;
-    }
-
-    &__link-active {
-      color: #fff;
-      border: 1px solid red;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 35px;
-      text-decoration: none;
-      padding: 5px 20px;
-      background: $color-grd-btn;
-      border-radius: 4px;
-    }
-    &__item {
-      padding: 0 20px;
-    }
-    .call + .call {
-      padding-right: 0px;
-    }
-    .divs {
-      padding-left: 150px;
-      display: flex;
-    }
-  }
-}
-
-form {
-  position: relative;
-  // width: 284px;
-  // height: 48px;
+.main-container {
+  max-width: 1173px;
   margin: 0 auto;
 }
-input,
-button {
-  border: none;
-  outline: none;
-  border-radius: 4px;
+.hr {
+ border: 1px solid $color-red;
+ color: $color-red;
+ background-color: $color-red;
+ 
 }
-input {
-  width: 284px;
-  height: 48px;
-  background: #f6f6f6;
-  border-radius: 4px;
-  padding-left: 15px;
+.hr-med {
+  display: none;
 }
-button {
-  height: 26px;
-  width: 26px;
-  position: absolute;
-  top: 10px;
-  right: 8px;
-  cursor: pointer;
-}
-.btnh:before {
-  content: url("../jarkynai/img/search.svg");
+.foot-hr {
+  border: 1px solid $color-red;
+  color: $color-red;
+  background-color: $color-red;
 }
 
-.wrapper {
-  display: flex;
+.bg-img {
+  background-image: url('../jarkynai/img/background.svg');
+  background-repeat: no-repeat;
 
-  &__list {
+}
+
+.main-header {
+  margin-top: 19px;
+
+  &__inner {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
-    li {
-      list-style-type: none;
-      padding: 0 5px;
+    &__logo {
+      margin-right: 37px;
+
+      &__link {
+        text-decoration: none;
+      }
     }
 
-    a {
+    &__nav {
+      &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        &__item {
+          &__link {
+            text-decoration: none;
+            color: $color-grey;
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-rl;
+            font-style: $font-style-normal;
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          .active-navbar {
+            color: $color-red;
+            font-weight: $font-weight-sm;
+          }
+
+          &__search {
+            margin: 0 24px 0 187px;
+            &-block {
+              &__form {
+                &__input {
+                  width: 284px;
+                  height: 48px;
+                  border: 0;
+                  border-radius: 5px;
+                  padding: 14px 24px;
+                  outline: none;
+
+                  font-family: $font-family-montserrat;
+                  font-weight: $font-weight-rl;
+                  font-style: $font-style-normal;
+                  font-size: 16px;
+
+                  background-color: $color-grey-light;
+                  color: $color-black;
+
+                  &::placeholder {
+                    color: $color-black;
+                  }
+                }
+
+                &__button-img {
+                  position: absolute;
+                  transform: translate(-200%, 60%);
+                  background-color: transparent;
+                  border: 0;
+
+                  &__img {
+                    width: 20px;
+                    height: 20px;
+                  }
+                }
+              }
+            }
+          }
+
+          &__contact {
+            &-block {
+              &__link {
+                text-decoration: none;
+                letter-spacing: 0.02em;
+                border-radius: 4px;
+                color: $color-white;
+                background-color: $color-red;
+                font-family: $font-family-montserrat;
+                font-weight: $font-weight-sm;
+                font-style: $font-style-normal;
+                font-size: 30px;
+                padding: 5px 22px;
+              }
+            }
+          }
+        }
+
+        &__item + &__item {
+          margin-left: 47px;
+        }
+      }
+    }
+  }
+}
+
+.geo__nav__person-area {
+  margin-top: 20px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 20px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__geo {
+      &__link {
+        text-decoration: none;
+        &__img-text {
+          display: flex;
+          align-items: center;
+
+          &__svg {
+            width: 20px;
+            height: 20px;
+          }
+
+          &__text {
+            text-decoration: none;
+            margin-left: 8px;
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-rl;
+            font-style: $font-style-normal;
+            font-size: 16px;
+            color: $color-red;
+          }
+        }
+      }
+    }
+
+    &__nav {
+      &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+        &__item {
+          &__link {
+            text-decoration: none;
+            color: $color-black;
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-rl;
+            font-style: $font-style-normal;
+            font-size: 16px;
+          }
+
+          .active-navbar-second {
+            color: $color-red;
+            font-weight: $font-weight-sm;
+          }
+        }
+
+        &__item + &__item {
+          margin-left: 33px;
+        }
+      }
+    }
+  }
+
+  &__person-area-block {
+    &__link {
       text-decoration: none;
-      color: #111111;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      transition: 0.8s;
-    }
-    a:hover {
-      color: $color-red;
-    }
-  }
-}
-.wrapper__map {
-  padding-right: 114px;
-  color: $color-red;
-  transition: 0.8s;
-  font-size: 16px;
-}
-.wrapper__map:hover {
-  color: $color-red;
-}
-.wrapper__user {
-  padding-left: 140px;
-  transition: 0.8s;
-  font-size: 16px;
-}
-.wrapper__user:hover {
-  color: $color-red;
-}
+      &__inner-blocks {
+        display: flex;
+        align-items: center;
 
-.location {
-  div {
-    margin-top: 36px;
-    margin-bottom: 36px;
-    width: 1114px;
-    height: 194px;
-    background-color: grey;
+        &__logo {
+          width: 20px;
+          height: 20px;
+
+          margin-right: 14px;
+          // margin-left: 109px;
+        }
+
+        &__text {
+          text-decoration: none;
+          font-family: $font-family-montserrat;
+          font-weight: $font-weight-rl;
+          font-style: $font-style-normal;
+          font-size: 16px;
+          color: $color-black;
+        }
+      }
+    }
   }
 }
+// .location {
+//   div {
+//     margin-top: 36px;
+//     margin-bottom: 36px;
+//     width: 1114px;
+//     height: 194px;
+//     background-color: grey;
+//   }
+// }
 
 .banner {
+  margin: 36px 0 46px;
   background-image: url("../jarkynai/img/image.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -161,7 +245,8 @@ button {
   &__title {
     padding-top: 48px;
     padding-bottom: 24px;
-    font-family: "Montserrat";
+    // padding-left: 120px;
+    font-family: $font-family-montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -173,9 +258,9 @@ button {
     color: $color-white;
   }
   &__text {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
+    font-family: $font-family-montserrat;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-rl;
     font-size: 20px;
     line-height: 24px;
     color: #ffffff;
@@ -184,17 +269,22 @@ button {
   &__link {
     color: $color-white;
     border: 1px solid $color-grd-btn;
-    padding: 12px 24px;
+    padding: 14px 24px;
     border-radius: 4px;
     background: $color-grd-btn;
+    font-family: $font-family-montserrat;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-rl;
+    font-size: 18px;
+    line-height: 22px;
   }
   .num {
     margin-top: 280px;
-    padding-left: 100px;
+    padding-left: 15px;
     color: $color-white;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
+    font-family: $font-family-montserrat;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-rl;
     font-size: 18px;
     line-height: 22px;
   }
@@ -208,24 +298,27 @@ button {
   }
 }
 .numer {
+  margin-bottom: 58px;
+  //padding-left: 115px;
   position: relative;
   &__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-  &__title {
-    padding-top: 48px;
-    padding-bottom: 34px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 39px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: $color-black;
+    &__blog1 {
+      &__title {
+        padding: 30px 0;
+        font-family: $font-family-montserrat;
+        font-style: $font-style-normal;
+        font-weight: $font-weight-sm;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-black;
+      }
+    }
   }
   .blogs {
     display: grid;
@@ -233,8 +326,8 @@ button {
     &__num {
       position: relative;
       //padding-top: 10px;
-      font-family: "Montserrat";
-      font-style: normal;
+      font-family: $font-family-montserrat;
+      font-style: $font-style-normal;
       font-weight: 700;
       font-size: 64px;
       line-height: 78px;
@@ -243,16 +336,16 @@ button {
       letter-spacing: 0.02em;
       text-transform: uppercase;
       color: $color-red;
-      .mani {
+      &__mani {
         position: absolute;
         top: -10px;
         left: 15%;
         font-size: 20px;
       }
-      .txt {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 400;
+      &__txt {
+        font-family: $font-family-montserrat;
+        font-style: $font-style-normal;
+        font-weight: $font-weight-rl;
         font-size: 18px;
         line-height: 22px;
         color: #111111;
@@ -261,7 +354,8 @@ button {
   }
   .blog2__img {
     position: absolute;
-    left: 580px;
+    left: 586px;
+    top: -43px;
   }
 }
 .transporation {
@@ -360,7 +454,8 @@ button {
     grid-template-columns: 1.6fr 1fr;
     gap: 20px;
     .blc__new {
-      padding: 29px 38px 18px;
+      margin: 0 20px;
+      padding: 29px 50px 18px;
       background: #f6f6f6;
       box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
       border-radius: 4px;
@@ -376,9 +471,9 @@ button {
         &__title {
           letter-spacing: 0.02em;
           text-transform: uppercase;
-          font-family: "Montserrat";
-          font-style: normal;
-          font-weight: 600;
+          font-family: $font-family-montserrat;
+          font-style: $font-style-normal;
+          font-weight: $font-weight-sm;
           font-size: 32px;
           line-height: 39px;
         }
@@ -396,7 +491,7 @@ button {
           padding-bottom: 16px;
         }
         &__link {
-          font-family: "Montserrat";
+          font-family: $font-family-montserrat;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -404,40 +499,34 @@ button {
           color: $color-red;
         }
       }
-      // .text {
-      //   font-family: "Montserrat";
-      //   font-style: normal;
-      //   font-weight: 400;
-      //   font-size: 18px;
-      //   line-height: 22px;
-      //   padding-bottom: 14px;
-      // }
     }
   }
-}
-.text {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  padding-bottom: 14px;
-}
-.blc__director {
-  border: 1px solid #dedede;
-  box-sizing: border-box;
-  padding: 29px;
-  box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
-  border-radius: 4px;
-  .text {
-    padding-top: 14px;
+  &__text {
+    font-family: $font-family-montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 14px;
   }
-  &__link {
-    padding-top: 19px;
-    color: $color-red;
-  }
-  &__img {
-    padding-top: 19px;
+
+  .blc__director {
+    margin-right: 30px;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
+    border-radius: 4px;
+    .text {
+      padding-top: 14px;
+    }
+    &__link {
+      padding-top: 19px;
+      color: $color-red;
+    }
+    &__img {
+      padding-top: 19px;
+    }
   }
 }
 
@@ -466,14 +555,13 @@ button {
 
     .why-flex {
       display: flex;
-    
       align-items: center;
       gap: 8px;
     }
   }
   &__num {
-    font-family: "Montserrat";
-    font-style: normal;
+    font-family: $font-family-montserrat;
+    font-style: $font-style-normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 78px;
@@ -491,17 +579,11 @@ button {
     padding: 13px 24px;
     color: $color-white;
     background: $color-grd-btn;
-    // font-family: "Montserrat";
-    // font-style: normal;
-    // font-weight: 400;
-    // font-size: 16px;
-    // line-height: 20px;
-    // color: $color-red;
   }
 }
 .need-help {
-  margin-top: 36px;
-  margin-bottom: 36px;
+  margin: 36px 50px;
+
   .container {
     padding: 36px;
     background: #ffffff;
@@ -510,6 +592,7 @@ button {
     box-sizing: border-box;
     box-shadow: -5px 4px 24px rgba(189, 189, 189, 0.5);
   }
+
   &__title {
     font-size: 32px;
     padding-bottom: 24px;
@@ -523,9 +606,9 @@ button {
   &__tel {
     color: #fff;
     border: 1px solid red;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
+    font-family: $font-family-montserrat;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-sm;
     font-size: 20px;
     line-height: 37px;
     display: flex;
@@ -539,9 +622,9 @@ button {
     }
   }
   &__text {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
+    font-family: $font-family-montserrat;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-rl;
     font-size: 18px;
     line-height: 22px;
   }
@@ -556,27 +639,96 @@ button {
       display: flex;
       gap: 16px;
       padding-bottom: 48px;
-      li {
-        list-style: none;
-        border: 1px solid #fff;
-        box-shadow: 0 0 5px;
-        border-radius: 4px;
-      }
+    
     }
   }
-  ul::after {
-    position: absolute;
-    left: 1216px;
-    top: 40%;
-    content: url("../jarkynai/img/Frame\ 33.svg");
-  }
-  ul::before {
-    position: absolute;
-    left: -50px;
-    top: 40%;
-    content: url("../jarkynai/img/Frame\ 28.svg");
-  }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
+.slick-slider {
+  min-width: 0;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slider {
+  position: relative;
+  padding: 0px 60px;
+}
+
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: 0px 25px 6px 25px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 48px;
+}
+.slider .slick-arrow.slick-prev {
+  left: -30px;
+  background: url("../jarkynai/img/Frame\ 28.svg") 0 0 / 
+  100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  right: -30px;
+  background: url("../jarkynai/img/Frame\ 33.svg") 0 0 /100%
+    no-repeat;
+}
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.9;
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+}
+.slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.slider__item {
+  padding: 10px 15px;
+}
+.slider__item img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow:  0 0 10px;
+}
+
+}
+
+
+
+
+
 
 .following {
   background-color: #f6f6f6;
@@ -587,19 +739,23 @@ button {
   }
 
   &__title {
-    padding: 31px 45px;
+    padding: 31px 35px;
   }
   .follow {
     border: 1px solid #dedede;
-    width: 390px;
+    width: 389px;
     height: 48px;
   }
   .follow__btn {
+    margin-left: 24px;
     background: $color-grd-btn;
     border: 1px solid $color-grd-btn;
     border-radius: 4px;
     color: $color-white;
-    padding: 13px 24px;
+    padding: 15px 30px;
+  }
+  button {
+    border: none;
   }
 }
 
@@ -675,10 +831,10 @@ button {
   .branches {
     &__list {
       display: flex;
-      justify-content: space-between;
-      gap: 32px;
+      // justify-content: space-between;
+      gap: 39px;
       flex-wrap: wrap;
-      padding-top: 19px;
+      padding-top: 15px;
       padding-bottom: 24px;
     }
     .branches-link {
@@ -742,14 +898,20 @@ span {
       grid-template-columns: repeat(2, 1fr);
     }
   }
-// .why-we {
-//   &__wrapper  {
-//     grid-template-columns: repeat(2, 1fr);
-//   }
+  .why-we {
+    &__wrapper  {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .hr {
+      display: none;
+    }
+    .hr-med {
+      display: block;
+      border: 1px solid $color-red;
+    }
 }
 
-
-  span {
-    width: 998px;
-  }
-
+span {
+  width: 998px;
+}
+}
