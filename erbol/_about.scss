@@ -883,3 +883,35 @@
     }
 }
 // END PRINCIPLE OF OPERATION
+
+// TRAINING
+.training {
+    margin-top: 24px;
+
+    &__inner {
+        padding: 0 68px 0 88px;
+
+        &__title {
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-sm;
+            font-style: $font-style-normal;
+            font-size: 32px;
+
+            color: $color-black;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        &__prg {
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-rl;
+            font-style: $font-style-normal;
+            font-size: 20px;
+
+            line-height: 24px;
+            max-width: 1138px;
+        }
+    }
+}
+// END TRAINING
