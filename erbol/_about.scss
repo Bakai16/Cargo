@@ -496,6 +496,7 @@
                 &__item {
                     max-width: 279px;
                     box-shadow: 0px 0px 20px 0px rgba(189, 189, 189, 0.5);
+                    border-radius: 4px;
 
                     &__img {
                         border-radius: 4px 4px 0 0;
@@ -504,7 +505,6 @@
                     }
 
                     &__texts-block {
-                        border-radius: 4px;
                         padding: 14px 0;
                         
                         &__title {
@@ -588,3 +588,201 @@
     }
 }
 // END OUR TEAM
+
+// HOW SPECIALISTS WORK
+.how-specialists-work {
+    margin-top: 48px;
+
+    &__inner {
+        padding: 0 36px 0 65px;
+
+        &__title {
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-sm;
+            font-style: $font-style-normal;
+            font-size: 32px;
+
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+
+            color: $color-black;
+            margin-bottom: 24px;
+            margin-left: 22px;
+        }
+
+        &__all-blocks {
+
+            &__block {
+                display: flex;
+                align-items: center;
+
+                box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
+                border-radius: 4px;
+
+                padding: 25px 24px 18px 40px;
+                margin-bottom: 24px;
+
+                max-width: 1064px;
+
+                &__title-descr {
+                    margin-right: 70px;
+
+                    &__title {
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-sm;
+                        font-style: $font-style-normal;
+                        font-size: 18px;
+
+                        line-height: 22px;
+                        color: $color-red;
+                        margin-bottom: 12px;
+
+                        text-transform: uppercase;
+                    }
+
+                    &__descr {
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-rl;
+                        font-style: $font-style-normal;
+                        font-size: 18px;
+
+                        line-height: 22px;
+                        color: $color-black;
+
+                        max-width: 880px;
+                    }
+                }
+
+                &__title-descr-second {
+                    margin-left: 40px;
+
+                    &__title {
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-sm;
+                        font-style: $font-style-normal;
+                        font-size: 18px;
+
+                        line-height: 22px;
+                        color: $color-red;
+                        margin-bottom: 12px;
+
+                        text-transform: uppercase;
+                    }
+
+                    &__descr {
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-rl;
+                        font-style: $font-style-normal;
+                        font-size: 18px;
+
+                        line-height: 22px;
+                        color: $color-black;
+
+                        max-width: 880px;
+                    }
+                }
+
+                &__icon-block {
+
+                    &__icon {
+                        width: 50px;
+                        height: 51px;
+                    }
+
+                    &__img {
+                        width: 50px;
+                    }
+                }
+            }
+
+            &__block-pos {
+                display: flex;
+                align-items: center;
+
+                box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
+                border-radius: 4px;
+
+                padding: 25px 24px 18px 40px;
+                margin-left: 94px;
+                margin-bottom: 24px;
+
+                max-width: 1064px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &__title-descr {
+                    margin-right: 70px;
+
+                    &__title {
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-sm;
+                        font-style: $font-style-normal;
+                        font-size: 18px;
+
+                        line-height: 22px;
+                        color: $color-red;
+                        margin-bottom: 12px;
+
+                        text-transform: uppercase;
+                    }
+
+                    &__descr {
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-rl;
+                        font-style: $font-style-normal;
+                        font-size: 18px;
+
+                        line-height: 22px;
+                        color: $color-black;
+
+                        max-width: 880px;
+                    }
+                }
+
+                &__title-descr-second {
+                    margin-left: 40px;
+
+                    &__title {
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-sm;
+                        font-style: $font-style-normal;
+                        font-size: 18px;
+
+                        line-height: 22px;
+                        color: $color-red;
+                        margin-bottom: 12px;
+
+                        text-transform: uppercase;
+                    }
+
+                    &__descr {
+                        font-family: $font-family-montserrat;
+                        font-weight: $font-weight-rl;
+                        font-style: $font-style-normal;
+                        font-size: 18px;
+
+                        line-height: 22px;
+                        color: $color-black;
+
+                        max-width: 880px;
+                    }
+                }
+
+                &__icon-block {
+
+                    &__icon {
+                        width: 50px;
+                        height: 51px;
+                    }
+
+                    &__img {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+// END HOW SPECIALISTS WORK
