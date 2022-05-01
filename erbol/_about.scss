@@ -786,3 +786,100 @@
     }
 }
 // END HOW SPECIALISTS WORK
+
+// PRINCIPLE OF OPERATION
+.principle-of-operation {
+    background-color: $color-grey-light;
+    margin-top: 36px;
+    
+    &__inner {
+        padding: 36px 68px 33px 94px;
+
+        &__title {
+            font-family: $font-family-montserrat;
+            font-weight: $font-weight-sm;
+            font-style: $font-style-normal;
+            font-size: 32px;
+
+            color: $color-black;
+            margin-bottom: 24px;
+
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        &__all-items {
+
+            &__item {
+                display: flex;
+                align-items: center;
+
+                border-bottom: 4px solid $color-red;
+                padding: 4px 0 6px;
+
+                &__number-one {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-bold;
+                    font-style: $font-style-normal;
+                    font-size: 64px;
+
+                    color: $color-red;
+                    margin-right: 36px;
+                }
+
+                &__number-second {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-bold;
+                    font-style: $font-style-normal;
+                    font-size: 64px;
+
+                    color: $color-red;
+                    margin-right: 24px;
+                }
+
+                &__number-third {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-bold;
+                    font-style: $font-style-normal;
+                    font-size: 64px;
+
+                    color: $color-red;
+                    margin-right: 22px;
+                }
+
+                &__number-fourth {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-bold;
+                    font-style: $font-style-normal;
+                    font-size: 64px;
+
+                    color: $color-red;
+                    margin-right: 17px;
+                }
+
+                &__number-fifth {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-bold;
+                    font-style: $font-style-normal;
+                    font-size: 64px;
+
+                    color: $color-red;
+                    margin-right: 23px;
+                }
+
+                &__descr {
+                    font-family: $font-family-montserrat;
+                    font-weight: $font-weight-rl;
+                    font-style: $font-style-normal;
+                    font-size: 18px;
+
+                    line-height: 22px;
+                    color: $color-black;
+
+                    max-width: 1008px;
+                }
+            }
+        }
+    }
+}
+// END PRINCIPLE OF OPERATION
