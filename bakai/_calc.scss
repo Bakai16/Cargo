@@ -391,9 +391,7 @@
     &-bg {
         background: #F6F6F6;
         padding-top: 25px;
-        padding-bottom: 28px;
-
-
+        padding-bottom: 24px;
     }
 
     &-inner {
@@ -483,7 +481,7 @@
 
     &__blc {
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: -4px;
 
         iframe {
             width: 100%;
@@ -502,7 +500,7 @@
 
     &__block {
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: -36px;
     }
 
     &__title {
@@ -510,7 +508,7 @@
         font-size: 32px;
         line-height: 39px;
         letter-spacing: 0.02em;
-        margin-top: 19px;
+        margin-top: 27px;
     }
 
     &__title:not(:last-child) {
@@ -579,6 +577,8 @@
         max-width: 1115px;
         margin-left: auto;
         margin-right: auto;
+        // padding-left: 36px;
+        // padding-right: 36px;
     }
 
     &__block {}
@@ -588,6 +588,69 @@
         font-size: 32px;
         line-height: 39px;
         letter-spacing: 0.02em;
-        margin: 0px 43px;
+    }
+
+    &__title:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.accordionsss {
+    margin-bottom: 10px;
+
+    &__list {
+        margin-left: -36px;
+        margin-right: -36px;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 14px;
+    }
+
+    &__item {
+        display: block;
+        background-color: #fff;
+        border: 1px solid #dedede;
+        box-shadow: -5px 4px 24px rgba(189, 189, 189, 0.5); 
+        border-radius: 4px;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    &__toggle {
+        padding: 13px 75px 15px 35px;
+        min-height: 66px;
+        width: 100%;
+        text-align: left;
+        align-items: center;
+        display: flex;
+        position: relative;
+    }
+
+    &__toggle::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 12px;
+        height: 12px;
+        transition: all .3s cubic-bezier(.23, 1, .32, 1);
+        transform-origin: center center;
+        right: 27px;
+        top: calc(50% - 9px);
+        border-right: 1px solid currentColor;
+        border-bottom: 1px solid currentColor;
+        transform: rotate(45deg);
+    }
+
+    &__icon {
+        font-size: 25px;
+        margin-right: 14px;
+        display: flex;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px
     }
 }

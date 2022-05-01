@@ -25,6 +25,10 @@ body{
   text-decoration: none;
   box-sizing: border-box;
 }
+button{
+  cursor: pointer;
+  border: none;
+}
 // FONT WEIGHTS
 $font-weight-sm: 600;
 $font-weight-md: 500;
