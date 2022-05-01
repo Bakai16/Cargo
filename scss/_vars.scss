@@ -18,6 +18,13 @@ $color-grd-btn: radial-gradient(53.24% 47.17% at 49.87% 49.92%,
 $font-family-montserrat: 'Montserrat',
 sans-serif;
 
+
+*,
+body{
+  font-family: $font-family-montserrat;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 // FONT WEIGHTS
 $font-weight-sm: 600;
 $font-weight-md: 500;
@@ -29,7 +36,7 @@ $font-style-italic: italic;
 
 
 
-  $color-white: #0b0a0a;
+  // $color-white: #0b0a0a;
   $color-grey:#4f4f4f;
   $font-family-main: 'Montserrat', sans-serif;
 
