@@ -1,2 +1,16 @@
 @import './Vars.scss';
-@import './Base.scss';
+@import '../src/components/Header/Header.scss';
+
+.container {
+    max-width: 1325px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

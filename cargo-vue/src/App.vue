@@ -1,4 +1,17 @@
 <template>
-    <div id="nav"></div>
-    <router-view/>
+  <div>
+    <Header />
+    <router-view />
+  </div>
 </template>
+
+<script>
+import Header from "@/components/Header/Header.vue";
+
+export default {
+  components: {
+    Header,
+    // Footer,
+  },
+};
+</script>
