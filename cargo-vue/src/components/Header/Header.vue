@@ -5,7 +5,7 @@
                 <div class="container">
                     <div class="header__inner">
                         <div class="header__inner__logo">
-                            <a class="header__inner__logo__link" href="#">
+                            <a class="header__inner__logo__link" href="/">
                                 <img class="header__inner__logo__link__img" src="../../assets/img/logo-red.png" alt="">
                             </a>
                         </div>
