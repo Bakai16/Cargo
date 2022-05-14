@@ -24,6 +24,27 @@ $(document).ready(function(){
 	});
 });
 
+function app() {
+	const buttons = document.querySelectorAll('.filter__btn');
+	const cards = document.querySelectorAll('.content__card');
+	function filter(category, items) {
+	  items.forEach((item) => {
+		  const isItemFiltered = !item.classList.contains(category);
+		  if (isItemFiltered) {
+			  item.classList.add('hide');
+		  }
+	  });
+	}
+	buttons.forEach((button) => {
+	  button.addEventListener("click", () => {
+		  const currentCategory = button.dataset.filter;
+		  filter(currentCategory, cards);
+	  });
+	});
+  }
+  
+  app();
+
 let menuToggle = 
 document.querySelector(".toggle");
 menuToggle.addEventListener("click", function 
