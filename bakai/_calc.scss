@@ -570,7 +570,7 @@
 .answer-que {
     background: $color-white;
     padding-top: 25px;
-    padding-bottom: 28px;
+    padding-bottom: 7px;
 
     &__inner {
         width: 100%;
@@ -657,32 +657,34 @@
 
 
 .our-recom {
+    background: #F6F6F6;
     &__inner {
         width: 100%;
-        max-width: 1186px;
+        max-width: 1115px;
         margin-left: auto;
         margin-right: auto;
     }
 
     &__title:not(:last-child) {
-        margin-bottom: 24px;
+        margin-bottom: -15px;
     }
 
     &__title {
         font-weight: 600;
         font-size: 32px;
-        line-height: 39px
+        line-height: 81px;
+        margin-top: 14px;
     }
 
 }
 
 .our-recom .sslider {
     position: relative;
-    margin-left: -36px;
-    margin-right: -36px;
+    margin-left: -90px;
+	margin-right: -90px;
 
     &__xslider {
-        margin-left: -7px;
+        margin-left: 28px;
         margin-right: -7px;
         overflow: visible;
     }
