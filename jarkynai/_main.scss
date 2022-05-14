@@ -170,7 +170,7 @@ li {
   justify-content: center;
   align-items: center;
   margin: 36px 0;
-  &__btn {
+.button {
     padding: 20px 70px;
     align-items: center;
     font-family: $font-family-montserrat;
@@ -196,13 +196,13 @@ li {
   .button__help {
     border: none;
     color: $color-grey;
-    padding: 20px 120.5px;
+    padding: 20px 91.5px;
   }
   .content {
     box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
     border-radius: 4px;
 
-    &__card {
+    .card {
       display: flex;
       padding: 26px 60px;
       justify-content: space-between;
@@ -210,7 +210,7 @@ li {
       gap: 24px;
     }
     .price__text {
-      font-family:$font-family-montserrat;
+      font-family: $font-family-montserrat;
       font-style: $font-style-normal;
       font-weight: $font-weight-sm;
       font-size: 16px;
@@ -293,9 +293,9 @@ li {
     }
   }
 }
-// .hide {
-//   display: none;
-// }
+.hide {
+  display: none;
+}
 
 .banner {
   background-image: url("../jarkynai/img/image.jpg");
@@ -350,6 +350,7 @@ li {
     line-height: 22px;
   }
   .num::after {
+   
     padding-left: 20px;
     content: url("../jarkynai/img/previous/arrow-right.svg");
   }
@@ -915,7 +916,7 @@ li {
     &__title {
       padding: 17px 0 16px 0;
     }
-    .footer__call-text__inner-test{
+    .footer__call-text__inner-test {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       // justify-content: space-between;
@@ -934,8 +935,8 @@ li {
     padding-bottom: 24px;
 
     .p {
-      font-family:$font-family-montserrat;
-      font-style:$font-style-normal;
+      font-family: $font-family-montserrat;
+      font-style: $font-style-normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
@@ -944,12 +945,7 @@ li {
 }
 
 
-
-
-
-
 //menu-toggle
-
 // #menu__toggle {
 //     opacity: 0;
 //   }
