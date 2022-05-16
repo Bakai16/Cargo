@@ -199,7 +199,7 @@
       font-weight: $font-weight-rl;
       font-size: 18px;
       line-height: 22px;
-      margin: 17px 0 24px 0;
+      margin: 17px 0 34px 0;
    }
 
    &__phone-link,
@@ -211,8 +211,7 @@
       text-decoration: none;
       color: $color-white;
       background-color: $color-red;
-      display: inline-block;
-      align-items: center;
+      
    }
 
    &__phone-link:before{
@@ -238,9 +237,9 @@
    }
 
    &__mail-link {
-      padding: 12px 14px 11.5px 17px;
+      padding: 10px 14px 10px 17px;
       border-radius: 4px;
-      margin-left: 24px;
+      margin-left: 21px;
    }
 }
 
