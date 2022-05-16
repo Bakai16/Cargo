@@ -1,125 +1,125 @@
 @import "../scss/vars";
 
-.header {
-    margin-top: 19px;
+// .header {
+//     margin-top: 19px;
 
-    &__inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+//     &__inner {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
 
-        &__logo {
-            margin-right: 37px;
+//         &__logo {
+//             margin-right: 37px;
 
-            &__link {
-                text-decoration: none;
-            }
-        }
+//             &__link {
+//                 text-decoration: none;
+//             }
+//         }
 
-        &__nav {
+//         &__nav {
 
-            &__list {
-                display: flex;
-                align-items: center;
+//             &__list {
+//                 display: flex;
+//                 align-items: center;
 
-                list-style: none;
+//                 list-style: none;
 
-                &__item {
+//                 &__item {
 
-                    &__link {
-                        text-decoration: none;
-                        color: $color-grey;
+//                     &__link {
+//                         text-decoration: none;
+//                         color: $color-grey;
 
-                        font-family: $font-family-montserrat;
-                        font-weight: $font-weight-rl;
-                        font-style: $font-style-normal;
-                        font-size: 16px;
+//                         font-family: $font-family-montserrat;
+//                         font-weight: $font-weight-rl;
+//                         font-style: $font-style-normal;
+//                         font-size: 16px;
 
-                        line-height: 20px;
-                    }
+//                         line-height: 20px;
+//                     }
 
-                    .active-navbar {
-                        color: $color-red;
+//                     .active-navbar {
+//                         color: $color-red;
 
-                        font-weight: $font-weight-sm;
-                    }
+//                         font-weight: $font-weight-sm;
+//                     }
 
-                    &__search {
-                        margin: 0 24px 0 187px;
+//                     &__search {
+//                         margin: 0 24px 0 187px;
 
-                        &-block {
+//                         &-block {
 
-                            &__form {
+//                             &__form {
 
-                                &__input {
+//                                 &__input {
 
-                                    width: 284px;
-                                    height: 48px;
-                                    border: 0;
-                                    border-radius: 5px;
-                                    padding: 14px 24px;
-                                    outline: none;
+//                                     width: 284px;
+//                                     height: 48px;
+//                                     border: 0;
+//                                     border-radius: 5px;
+//                                     padding: 14px 24px;
+//                                     outline: none;
 
-                                    font-family: $font-family-montserrat;
-                                    font-weight: $font-weight-rl;
-                                    font-style: $font-style-normal;
-                                    font-size: 16px;
+//                                     font-family: $font-family-montserrat;
+//                                     font-weight: $font-weight-rl;
+//                                     font-style: $font-style-normal;
+//                                     font-size: 16px;
 
-                                    background-color: $color-grey-light;
-                                    color: $color-black;
+//                                     background-color: $color-grey-light;
+//                                     color: $color-black;
 
-                                    &::placeholder {
-                                        color: $color-black;
-                                    }
-                                }
+//                                     &::placeholder {
+//                                         color: $color-black;
+//                                     }
+//                                 }
 
-                                &__button-img {
-                                    position: absolute;
-                                    transform: translate(-200%, 60%);
+//                                 &__button-img {
+//                                     position: absolute;
+//                                     transform: translate(-200%, 60%);
 
-                                    background-color: transparent;
-                                    border: 0;
+//                                     background-color: transparent;
+//                                     border: 0;
 
-                                    &__img {
-                                        width: 20px;
-                                        height: 20px;
-                                    }
-                                }
-                            }
-                        }
-                    }
+//                                     &__img {
+//                                         width: 20px;
+//                                         height: 20px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
 
-                    &__contact {
+//                     &__contact {
 
-                        &-block {
+//                         &-block {
 
-                            &__link {
+//                             &__link {
 
-                                text-decoration: none;
-                                letter-spacing: 0.02em;
-                                border-radius: 4px;
+//                                 text-decoration: none;
+//                                 letter-spacing: 0.02em;
+//                                 border-radius: 4px;
 
-                                color: $color-white;
-                                background-color: $color-red;
+//                                 color: $color-white;
+//                                 background-color: $color-red;
 
-                                font-family: $font-family-montserrat;
-                                font-weight: $font-weight-sm;
-                                font-style: $font-style-normal;
-                                font-size: 30px;
+//                                 font-family: $font-family-montserrat;
+//                                 font-weight: $font-weight-sm;
+//                                 font-style: $font-style-normal;
+//                                 font-size: 30px;
 
-                                padding: 5px 22px;
-                            }
-                        }
-                    }
-                }
+//                                 padding: 5px 22px;
+//                             }
+//                         }
+//                     }
+//                 }
 
-                &__item+&__item {
-                    margin-left: 47px;
-                }
-            }
-        }
-    }
-}
+//                 &__item+&__item {
+//                     margin-left: 47px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 .geo__navbar__personal-area {
     margin-top: 20px;
