@@ -111,16 +111,17 @@ li {
 }
 
 .for-user-blc {
-  margin-top: 20px;
+  margin-top: 16px;
   border-top: 1px solid #f2f2f2;
   padding-top: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #f2f2f2;
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 5px;
 
     &__location {
       &__text-img {
@@ -301,10 +302,10 @@ li {
   background-image: url("../jarkynai/img/image.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 10px;
+  margin-top: 40px;
   &__title {
     padding-top: 48px;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
     // padding-left: 120px;
     font-family: $font-family-montserrat;
     font-style: $font-style-normal;
@@ -324,7 +325,7 @@ li {
     font-size: 20px;
     line-height: 24px;
     color: #ffffff;
-    padding-bottom: 36px;
+    padding-bottom: 47px;
   }
   &__link {
     color: $color-white;
@@ -364,7 +365,7 @@ li {
   background-repeat: no-repeat;
 
   .number {
-    padding: 48px 0 58px 0;
+    padding: 41px 0 58px 0;
     &__title {
       font-family: $font-family-montserrat;
       font-style: $font-style-normal;
@@ -384,8 +385,9 @@ li {
         &__call {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          gap: 10px;
-          padding: 23px 0 0 0;
+          max-width: 180px;
+          gap: 0  63px;
+          padding: 18px 0 0px 0;
         }
       }
 
@@ -397,6 +399,7 @@ li {
     }
 
     .numer {
+      min-width: 178px;
       font-family: $font-family-montserrat;
       font-style: $font-style-normal;
       font-weight: 700;
@@ -405,15 +408,16 @@ li {
       letter-spacing: 0.02em;
       text-transform: uppercase;
       color: #d51218;
+      border-bottom: 5px solid $color-red;
 
       &__text {
-        border-top: 5px solid red;
         font-family: $font-family-montserrat;
         font-style: $font-style-normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
         color: #111111;
+        padding-bottom: 10px;
       }
     }
   }
@@ -422,8 +426,8 @@ li {
 .transporation {
   &__title {
     margin-top: 65px;
-    font-family: "Montserrat";
-    font-style: normal;
+    font-family: $font-family-montserrat;
+    font-style:$font-style-normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;
@@ -435,7 +439,7 @@ li {
   }
   &__inner {
     margin-top: 34px;
-    margin-bottom: 36px;
+    margin-bottom: 33px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -444,7 +448,7 @@ li {
     border: 1px solid #dedede;
     border-radius: 4px;
     box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
-    padding: 33px 34px 45px;
+    padding: 22px 31px 56px;
     display: flex;
     gap: 20px;
   }
@@ -475,10 +479,10 @@ li {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: $color-white;
-    padding-bottom: 24px;
+    padding-bottom: 18px;
   }
   &__text {
-    padding-bottom: 49px;
+    padding-bottom: 55px;
     font-family: $font-family-montserrat;
     font-style: $font-style-normal;
     font-weight: 400;
@@ -523,10 +527,10 @@ li {
   &__inner {
     display: grid;
     grid-template-columns: 3fr 0.6fr;
-    gap: 20px;
+    gap: 25px;
   }
   .blc-new {
-    margin: 36px 0;
+    margin: 30px 0;
     padding: 29px 0;
     background-color: $color-grey-light;
     padding: 36px 30px 18px;
@@ -578,7 +582,7 @@ li {
   }
 
   .blc-derector {
-    margin: 36px 0;
+    margin: 30px 0;
     padding: 29px 0;
     background-color: $color-grey-light;
     padding: 36px 29px 18px;
@@ -591,7 +595,7 @@ li {
     }
 
     &__img {
-      padding: 0 0 14px 0;
+      padding: 0 0 10px 0;
     }
     &__text {
       padding: 0 0 19px 0;
@@ -613,23 +617,23 @@ li {
 }
 
 .why-choose-us {
-  margin: 0 0 36px 0;
+  margin: 0 0 60px 0;
   background-color: $color-grey-light;
-  padding: 8px 0;
+  padding: 20px 0;
 
   &__list {
-    margin: 36px 0 32px;
+    margin: 21px 0 35px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap:  0 45px;
   }
 
   &__item {
     display: flex;
     align-items: center;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     border-bottom: 5px solid $color-red;
-    gap: 10px;
+    gap: 15px;
     &__num {
       font-family: $font-family-montserrat;
       font-style: $font-style-normal;
@@ -669,7 +673,7 @@ li {
 .need-help {
   &__wrapper {
     background-color: $color-grey-light;
-    padding: 36px 0;
+    padding: 18px 0;
     border-radius: 4px;
   }
 
@@ -679,7 +683,7 @@ li {
     align-items: center;
   }
   &__call-text {
-    padding: 24px 0 0 0;
+    padding: 17px 0 0 0;
     font-family: $font-family-montserrat;
     font-style: $font-style-normal;
     font-weight: 400;
@@ -697,15 +701,16 @@ li {
     letter-spacing: 0.02em;
     border-radius: 4px;
     padding: 5px 22px;
+    margin-top: 9px;
   }
 }
 
 .recommended {
   &__title {
-    padding: 29px 0 0 0;
+    padding: 55px 0 0 0;
   }
   &__inner {
-    padding-top: 24px;
+    padding-top: 26px;
     // display: flex;
     .recommended__list {
       position: relative;
@@ -793,7 +798,7 @@ li {
 }
 
 .following {
-  padding: 30px 0;
+  padding: 31px 0;
   background-color: $color-grey-light;
   &__inner {
     display: flex;
@@ -823,8 +828,8 @@ li {
   }
 
   &__btn {
-    padding: 13px 24px;
-    margin-left: 10px;
+    padding: 13px 22px;
+    margin-left: -36px;
     background-color: #d51218;
     border: none;
     font-family: $font-family-montserrat;
@@ -839,11 +844,11 @@ li {
 
 .footer {
   &__logo {
-    margin: 28px 0;
+    margin: 24px 0;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid$color-red;
-    padding: 0 0 23px 0;
+    padding: 0 0 21px 0;
   }
   &__icon {
     img {
@@ -858,7 +863,7 @@ li {
       // justify-content: space-between;
       gap: 55px;
       border-bottom: 1px solid$color-red;
-      padding-bottom: 27px;
+      padding-bottom: 33px;
     }
 
     .linki {
@@ -883,21 +888,21 @@ li {
 
   .branches {
     &__title {
-      padding-top: 24px;
+      padding-top: 23px;
     }
     &__list {
       display: flex;
       // justify-content: space-between;
-      gap: 33px;
+      gap: 15px 32px;
       flex-wrap: wrap;
       padding-top: 7px;
       padding-bottom: 20px;
       border-bottom: 1px solid $color-red;
-      padding: 0 0 10px 0;
+      padding: 5px 0 21px 0;
     }
     .branches-link {
-      font-family: "Montserrat";
-      font-style: normal;
+      font-family: $font-family-montserrat;
+      font-style:$font-style-normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
@@ -911,7 +916,7 @@ li {
     color: #d51218;
   }
   .test {
-    margin-bottom: 24px;
+    margin-bottom: 29px;
 
     &__title {
       padding: 17px 0 16px 0;
@@ -922,7 +927,7 @@ li {
       // justify-content: space-between;
       gap: 55px;
       border-bottom: 1px solid$color-red;
-      padding-bottom: 7px;
+      padding-bottom: 9px;
     }
   }
   .padd {
