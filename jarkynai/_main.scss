@@ -129,7 +129,11 @@ li {
       }
       &__text {
         color: $color-red;
-        font-weight: $font-weight-sm;
+        font-family: $font-family-montserrat;
+        font-style: $font-style-normal;
+        font-weight: $font-weight-rl;
+        font-size: 16px;
+        line-height: 20px;
       }
     }
     &__person {
@@ -138,7 +142,11 @@ li {
       }
       &__text {
         color: $color-grey;
-        font-weight: $font-weight-sm;
+        font-family: $font-family-montserrat;
+        font-style:$font-style-normal;
+        font-weight: $font-weight-rl;
+        font-size: 16px;
+        line-height: 20px;
       }
     }
   }
@@ -160,7 +168,10 @@ li {
     }
   }
 }
-
+.hero__icon {
+  display: flex;
+  align-items: center;
+}
 .hero-container {
   max-width: 1114px;
   margin: 0 auto;
@@ -183,6 +194,7 @@ li {
   }
 
   .button__price {
+    border-radius: 4px;
     color: $color-red;
     background-color: $color-white;
     border: none;
@@ -190,11 +202,13 @@ li {
     border-radius: 4px 4px 0px 0px;
   }
   .button__cargo {
+    border-radius: 4px;
     border: none;
     color: $color-grey;
-    padding: 20px 100px;
+    padding: 20px 110px;
   }
   .button__help {
+    border-radius: 4px;
     border: none;
     color: $color-grey;
     padding: 20px 91.5px;
@@ -207,7 +221,7 @@ li {
       display: flex;
       padding: 26px 60px;
       justify-content: space-between;
-      // align-items: center;
+      align-items: center;
       gap: 24px;
     }
     .price__text {
@@ -285,6 +299,7 @@ li {
       padding: 12px 24px;
       border: none;
       color: $color-white;
+      border-radius: 4px;
 
       font-family: $font-family-montserrat;
       font-style: $font-style-normal;
@@ -302,6 +317,7 @@ li {
   background-image: url("../jarkynai/img/image.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   margin-top: 40px;
   &__title {
     padding-top: 48px;
@@ -701,6 +717,10 @@ li {
     border-radius: 4px;
     padding: 5px 22px;
     margin-top: 9px;
+
+    &__link {
+      color: $color-white;
+    }
   }
 }
 
@@ -773,14 +793,6 @@ li {
     list-style: none;
     margin: 0px 10px;
   }
-  // .slider .slick-dots button {
-  //   font-size: 0;
-  //   width: 10px;
-  //   height: 10px;
-  //   background-color: #fff;
-  //   border-radius: 50%;
-  // }
-
   .slider .slick-dots li.slick-active button {
     background-color: transparent;
     border: 1px solid #fff;
@@ -868,20 +880,19 @@ li {
     .linki {
       font-family: $font-family-montserrat;
       font-style: $font-style-normal;
-      font-weight: $font-weight-sm;
+      font-weight:$font-weight-rl;
       font-size: 16px;
       line-height: 20px;
-      color: #4f4f4f;
+     color: #4F4F4F;
     }
   }
   .footer-title {
     font-family: $font-family-montserrat;
     font-style: $font-style-normal;
-    font-weight: $font-weight-md;
+    font-weight: $font-weight-sm;
     font-size: 18px;
-    line-height: 22px;
-    padding-top: 0px;
-    color: $color-black;
+    line-height: 22px;  
+    color: #111111;
     padding: 0 0 15px 0;
   }
 
@@ -923,7 +934,6 @@ li {
     .footer__call-text__inner-test {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      // justify-content: space-between;
       gap: 55px;
       border-bottom: 1px solid$color-red;
       padding-bottom: 9px;
@@ -947,85 +957,3 @@ li {
     }
   }
 }
-
-// @media screen and (max-width:480px) {
-//   //menu-toggle
-//   #menu__toggle {
-//     opacity: 0;
-//   }
-
-//   /* стилизуем кнопку */
-//   .menu__btn {
-//     display: flex; /* используем flex для центрирования содержимого */
-//     align-items: center; /* центрируем содержимое кнопки */
-//     position: fixed;
-//     top: 20px;
-//     left: 20px;
-//     width: 26px;
-//     height: 26px;
-//     cursor: pointer;
-//     z-index: 1;
-//   }
-//   /* добавляем "гамбургер" */
-//   .menu__btn > span,
-//   .menu__btn > span::before,
-//   .menu__btn > span::after {
-//     display: block;
-//     position: absolute;
-//     width: 100%;
-//     height: 2px;
-//     background-color: #616161;
-//   }
-//   .menu__btn > span::before {
-//     content: "";
-//     top: -8px;
-//   }
-//   .menu__btn > span::after {
-//     content: "";
-//     top: 8px;
-//   }
-//   /* контейнер меню */
-//   .menu__box {
-//     display: block;
-//     position: fixed;
-//     visibility: hidden;
-//     top: 0;
-//     left: -100%;
-//     width: 300px;
-//     height: 100%;
-//     margin: 0;
-//     padding: 80px 0;
-//     list-style: none;
-//     text-align: center;
-//     background-color: $color-white;
-//     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-//   }
-//   /* элементы меню */
-//   .menu__item {
-//     display: block;
-//     padding: 12px 24px;
-//     color: #333;
-//     font-family: "Roboto", sans-serif;
-//     font-size: 20px;
-//     font-weight: 600;
-//     text-decoration: none;
-//   }
-//   .menu__item:hover {
-//     background-color: #cfd8dc;
-//   }
-//   #menu__toggle:checked ~ .menu__btn > span {
-//     transform: rotate(45deg);
-//   }
-//   #menu__toggle:checked ~ .menu__btn > span::before {
-//     top: 0;
-//     transform: rotate(0);
-//   }
-//   #menu__toggle:checked ~ .menu__btn > span::after {
-//     top: 0;
-//     transform: rotate(90deg);
-//   }
-//   #menu__toggle:checked ~ .menu__box {
-//     visibility: visible;
-//     left: 0;
-//   }
-// }
