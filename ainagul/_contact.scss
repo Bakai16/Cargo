@@ -5,7 +5,7 @@
 .header {
      margin-top: unset;  // remove property from another file
 
-   &_inner {
+   .header_inner {
 
        &__top-row,
        &__bottom-row {
@@ -20,11 +20,8 @@
   
    } 
 
- 
   }
         
-
-
 .top-menu,
 .bottom-menu {
      &_list {
@@ -49,7 +46,6 @@
    padding: 18px 0 20px 0;   
       
    &__search-form {
-          background-color: $color-grey-light;
           border-radius: 4px;
          
    
@@ -103,6 +99,7 @@
 }
 
 .search-form_item{
+   background-color: $color-grey-light;
    margin: 0 24px 0 187px;
 }
 
@@ -173,9 +170,13 @@
    text-transform: uppercase;
 }
 
+.wrapper {
+   max-width: 1187px;
+}
+
 
 .geo-location-block {
-    max-width: 1187px;
+   
     margin: 36px auto 24px auto;
     
    &_inner {
@@ -252,3 +253,134 @@
       transform: translate(85%, 40%);
    }
 }
+
+
+// Requisites section
+
+.requisites {
+   margin: 44px auto 0 auto;
+   box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
+   
+   &_inner {
+    margin: 0 28px 0 5px;
+   }
+
+   &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 29px;
+   }
+
+   &__title{
+      font-family: $font-family-montserrat;
+      font-style: $font-style-normal;
+      font-weight: $font-weight-sm;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: $color-red;
+   }
+
+   &__download{
+      font-family: $font-family-montserrat;
+      font-style: $font-style-normal;
+      font-weight: $font-weight-rl;
+      font-size: 16px;
+      text-decoration: none;
+      color: $color-red;
+   }
+
+
+   &_list {
+        padding: 21px 0 37px 30px;
+        background-image: url('../assets/img/background-requisites\ 340.png');
+        background-repeat: no-repeat;
+        background-position: center;
+
+      &__block{
+            font-family: $font-family-montserrat;
+            font-style: $font-style-normal;
+            font-weight: $font-weight-rl;
+            font-size: 20px;
+            line-height: 24px;
+            color:$color-black;
+      }
+
+      &__block p {
+         padding-bottom: 8px;
+      }
+
+      &__block + &__block {
+         margin-top: 16px;
+      }
+
+   }
+}
+
+
+//Departments section
+
+.departments {
+   margin: 48px auto 0 auto;
+}
+
+.departments_inner{
+   display: grid;
+   grid-template-columns: 565px 565px;
+   gap: 25px 54px;
+   
+}
+
+.department_item-inner {
+   display: flex;
+   align-items: center;
+   padding: 18px 0 14px 0;
+   box-shadow: 0px 4px 24px 2px rgba(189, 189, 189, 0.5);
+}
+
+
+.inner-left{
+   width: 78%;
+
+   &_title{
+      font-family: $font-family-montserrat;
+      font-style: $font-style-normal;
+      font-weight: $font-weight-rl;
+      font-size: 18px;
+      color: $color-red;
+   }
+
+   &_mail {
+      display: flex;
+      align-items: center;
+   }
+
+   &_mail img {
+      margin-right: 7.7px;
+   }
+
+   &_mail p {
+      font-family: $font-family-montserrat;
+      font-style: $font-style-normal;
+      font-weight: $font-weight-rl;
+      font-size: 18px;
+      color: $color-black;
+   }
+
+   &_title,
+   &_mail {
+      margin-left: 36px;
+   }
+   
+   hr {
+      margin: 18px 0 17px 0;
+   }
+   
+}
+
+
+.inner-right{
+   margin: 0 0 0 42px;
+}
+
+
